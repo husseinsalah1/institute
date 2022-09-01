@@ -63,6 +63,12 @@ const validateUpdateInputs = (userData) => {
   userData.confirmPassword = !isEmpty(userData.confirmPassword)
     ? userData.confirmPassword
     : '';
+  if (
+    userData.password !== '' &&
+    !validator.isLength(userData.password, { min: 8, max: 30 })
+  ) {
+    errors.password = 'Password must be between 8 and 30 characters';
+  }
   if (userData.password.toLowerCase().includes('password')) {
     errors.password = 'Password cannot contain "password"';
   }

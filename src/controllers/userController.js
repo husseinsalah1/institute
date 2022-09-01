@@ -140,6 +140,7 @@ module.exports = {
   // @access         Private
   updateUser: async (req, res) => {
     const requestedUpdate = Object.keys(req.body);
+    console.log(requestedUpdate);
     const { errors, isValid } = validateUpdateInputs(req.body);
     if (!isValid) return res.status(400).json({ errors });
     const allowedUpdate = [
@@ -150,7 +151,6 @@ module.exports = {
       'password',
       'confirmPassword',
     ];
-
     const isValidOperation = requestedUpdate.every((update) =>
       allowedUpdate.includes(update)
     );
