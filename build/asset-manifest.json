@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.57a329d4.css",
+    "main.js": "/static/js/main.430f5a1e.js",
+    "static/media/Logo1.png": "/static/media/Logo1.80a6e97c240c6f9114a5.png",
+    "static/media/login-register1.png": "/static/media/login-register1.4f0634b99498073424da.png",
+    "static/media/Logo2.png": "/static/media/Logo2.65f6d4ae2b1f6d881918.png",
+    "static/media/logo5.png": "/static/media/logo5.3614117e3e892ad116bf.png",
+    "static/media/Goal.jpg": "/static/media/Goal.53486a7e2ef1a10b6dc7.jpg",
+    "static/media/logo.png": "/static/media/logo.a8db8830a50e550e3a68.png",
+    "static/media/founderman.jpeg": "/static/media/founderman.20607ca44fe8055251fc.jpeg",
+    "static/media/logo3.png": "/static/media/logo3.d3cc9f5abb2e84de74ad.png",
+    "static/media/logo4.png": "/static/media/logo4.50a2ac7a3c2ec2824ff6.png",
+    "static/media/vision.jpg": "/static/media/vision.e47bdca0b81bf04b073b.jpg",
+    "static/media/istockphoto-903018734-612x612.jpg": "/static/media/istockphoto-903018734-612x612.2436e49b4464dd17f783.jpg",
+    "static/media/profile-circle.png": "/static/media/profile-circle.030f575e856a7ca7b07f.png",
+    "static/media/role-of-internet-in-education-3.jpg": "/static/media/role-of-internet-in-education-3.ef615577b331ae7fa2b9.jpg",
+    "static/media/Departments.png": "/static/media/Departments.d56f332bf233843b5b5e.png",
+    "static/media/founderwomen.jpeg": "/static/media/founderwomen.2130572ccf5e5580aac0.jpeg",
+    "index.html": "/index.html",
+    "main.57a329d4.css.map": "/static/css/main.57a329d4.css.map",
+    "main.430f5a1e.js.map": "/static/js/main.430f5a1e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57a329d4.css",
+    "static/js/main.430f5a1e.js"
+  ]
+}
