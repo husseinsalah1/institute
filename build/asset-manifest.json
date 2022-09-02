@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.1e1c63e5.css",
-    "main.js": "/static/js/main.39d98b29.js",
+    "main.css": "/static/css/main.30e7ecdd.css",
+    "main.js": "/static/js/main.2421d05a.js",
     "static/media/Logo1.png": "/static/media/Logo1.80a6e97c240c6f9114a5.png",
     "static/media/login-register1.png": "/static/media/login-register1.4f0634b99498073424da.png",
     "static/media/Logo2.png": "/static/media/Logo2.65f6d4ae2b1f6d881918.png",
     "static/media/logo5.png": "/static/media/logo5.3614117e3e892ad116bf.png",
+    "static/media/logo.png": "/static/media/logo.5a70c24d3c65d84e656f.png",
     "static/media/Goal.jpg": "/static/media/Goal.53486a7e2ef1a10b6dc7.jpg",
-    "static/media/logo.png": "/static/media/logo.a8db8830a50e550e3a68.png",
     "static/media/founderman.jpeg": "/static/media/founderman.20607ca44fe8055251fc.jpeg",
     "static/media/logo3.png": "/static/media/logo3.d3cc9f5abb2e84de74ad.png",
     "static/media/logo4.png": "/static/media/logo4.50a2ac7a3c2ec2824ff6.png",
@@ -18,11 +18,11 @@
     "static/media/Departments.png": "/static/media/Departments.d56f332bf233843b5b5e.png",
     "static/media/founderwomen.jpeg": "/static/media/founderwomen.2130572ccf5e5580aac0.jpeg",
     "index.html": "/index.html",
-    "main.1e1c63e5.css.map": "/static/css/main.1e1c63e5.css.map",
-    "main.39d98b29.js.map": "/static/js/main.39d98b29.js.map"
+    "main.30e7ecdd.css.map": "/static/css/main.30e7ecdd.css.map",
+    "main.2421d05a.js.map": "/static/js/main.2421d05a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1e1c63e5.css",
-    "static/js/main.39d98b29.js"
+    "static/css/main.30e7ecdd.css",
+    "static/js/main.2421d05a.js"
   ]
 }
