@@ -232,6 +232,7 @@ module.exports = {
     const id = req.params.id;
     try {
       const user = await User.findByIdAndDelete(id);
+      await RegisteredCourses.deleteMany({ userId: id });
       if (!user) {
         return res.status(404).json({ success: false, message: 'NOT FOUND' });
       }
