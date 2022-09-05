@@ -20,7 +20,7 @@ module.exports = {
     const userData = {
       name: req.body.name,
       password: req.body.password,
-      email: req.body.email,
+      email: req.body.email.toLowerCase(),
       phone: req.body.phone,
       role: req.body.role,
     };
@@ -28,13 +28,13 @@ module.exports = {
     try {
       const isExist = await User.findOne({
         $or: [
-          ({ email: req.body.email },
+          ({ email: req.body.email.toLowerCase() },
           {
             phone: req.body.phone,
           }),
         ],
       });
-      if (isExist && isExist.email === req.body.email) {
+      if (isExist && isExist.email === req.body.email.toLowerCase()) {
         errors.email = 'Email is already exist';
         return res.status(400).json({ success: false, errors });
       }
@@ -166,7 +166,9 @@ module.exports = {
           return res.status(404).json({ success: false, message: 'NOT FOUND' });
         }
         requestedUpdate.forEach((update) => (user[update] = req.body[update]));
-        const isExistEmail = await User.findOne({ email: req.body.email });
+        const isExistEmail = await User.findOne({
+          email: req.body.email.toLowerCase(),
+        });
         const isExistPhone = await User.findOne({ phone: req.body.phone });
         if (
           isExistEmail &&
@@ -191,7 +193,9 @@ module.exports = {
           return res.status(404).json({ success: false, message: 'NOT FOUND' });
         }
         requestedUpdate.forEach((update) => (user[update] = req.body[update]));
-        const isExistEmail = await User.findOne({ email: req.body.email });
+        const isExistEmail = await User.findOne({
+          email: req.body.email.toLowerCase(),
+        });
         const isExistPhone = await User.findOne({ phone: req.body.phone });
         if (
           isExistEmail &&
