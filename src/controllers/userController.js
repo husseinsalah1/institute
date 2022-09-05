@@ -64,7 +64,7 @@ module.exports = {
     }
 
     try {
-      const user = await User.findOne({ email });
+      const user = await User.findOne({ email: email.toLowerCase() });
       if (!user) {
         errors.email = "Email doesn't exist, Please try again";
 
