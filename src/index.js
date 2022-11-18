@@ -12,9 +12,7 @@ const courseRoutes = require('./routes/courseRoutes');
 const inquiryRoutes = require('./routes/inquiryRoutes');
 const reviewRoutes = require('./routes/reviewRoutes');
 const regCourseRoutes = require('./routes/registeredCourseRoutes');
-
 connect();
-
 const corsOptions = {
   origin: '*',
   credentials: true,
@@ -32,7 +30,6 @@ app.use('/course', courseRoutes);
 app.use('/inquiry', inquiryRoutes);
 app.use('/review', reviewRoutes);
 app.use('/registeredcourse', regCourseRoutes);
-
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'build', 'index.html'));
 });

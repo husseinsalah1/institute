@@ -285,10 +285,12 @@ module.exports = {
         courseCode: checkCourse.courseCode,
         lang: langcheck,
       }).select(['attends']);
-      otherlang.attends++;
       checkCourse.attends++;
+      if (otherlang) {
+        otherlang.attends++;
+        await otherlang.save();
+      }
       const registeredCourses = await new RegisteredCourses(regCourseData);
-      await otherlang.save();
       await checkCourse.save();
       await registeredCourses.save();
       res.json({ success: true, message: 'Registered successfully' });
